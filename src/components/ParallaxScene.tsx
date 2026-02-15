@@ -176,7 +176,7 @@ const ParallaxScene = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen bg-[#001a33] overflow-hidden">
+    <section className="relative w-full min-h-screen bg-[#1a0000] overflow-hidden">
       {/* Consistent aspect ratio container for all screen sizes */}
       <div 
         className="relative w-full" 

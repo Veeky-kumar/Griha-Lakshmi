@@ -266,7 +266,7 @@ const HeroSection = () => {
           <div
             className="w-12 h-16 md:w-20 md:h-28 rounded-t-full mx-auto"
             style={{
-              background: "linear-gradient(180deg, hsl(0 55% 45%), hsl(43 72% 55%), hsl(170 35% 45%))",
+              background: "linear-gradient(180deg, hsl(0 55% 45%), hsl(43 72% 55%), hsl(350 35% 45%))",
               boxShadow: "0 4px 20px hsl(0 0% 0% / 0.3)",
             }}
           />
@@ -290,7 +290,7 @@ const HeroSection = () => {
         <svg viewBox="0 0 1440 260" className="w-full" preserveAspectRatio="none">
           <path
             d="M0,0 L1440,0 L1440,180 Q1200,240 720,200 Q240,160 0,220 Z"
-            fill="hsl(207, 45%, 11%)"
+            fill="hsl(350, 45%, 11%)"
           />
           {/* Ornamental gold line at the curved edge */}
           <path
@@ -315,7 +315,7 @@ const HeroSection = () => {
       <div
         className="hero-side-edge-left absolute left-0 top-0 bottom-0 w-16 md:w-28 z-[30]"
         style={{
-          background: "linear-gradient(90deg, hsl(207 50% 10% / 0.9), transparent)",
+          background: "linear-gradient(90deg, hsl(350 50% 10% / 0.9), transparent)",
           boxShadow: "inset -10px 0 30px hsl(0 0% 0% / 0.2)",
         }}
       >
@@ -325,7 +325,7 @@ const HeroSection = () => {
       <div
         className="hero-side-edge-right absolute right-0 top-0 bottom-0 w-16 md:w-28 z-[30]"
         style={{
-          background: "linear-gradient(-90deg, hsl(207 50% 10% / 0.9), transparent)",
+          background: "linear-gradient(-90deg, hsl(350 50% 10% / 0.9), transparent)",
           boxShadow: "inset 10px 0 30px hsl(0 0% 0% / 0.2)",
         }}
       >
@@ -353,7 +353,7 @@ const HeroSection = () => {
               <div
                 className="w-32 h-20 md:w-48 md:h-28 mx-auto rounded-t-full border-2 border-gold/40"
                 style={{
-                  background: "linear-gradient(180deg, hsl(207 45% 20%), hsl(207 55% 14%))",
+                  background: "linear-gradient(180deg, hsl(350 45% 20%), hsl(350 55% 14%))",
                   boxShadow: "0 0 40px hsl(43 72% 55% / 0.15)",
                 }}
               />
