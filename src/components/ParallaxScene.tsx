@@ -73,7 +73,7 @@ const ParallaxScene = () => {
         
         // Horizontal left-right movement (MORE movement, FASTER)
         gsap.to(palaceRef.current, {
-          x: 20,
+          x: 100,
           duration: 4,
           ease: "sine.inOut",
           repeat: -1,
@@ -95,7 +95,7 @@ const ParallaxScene = () => {
       // Left Side Asset - synchronized gentle sway (LESS movement, FASTER)
       if (leftSideRef.current) {
         gsap.to(leftSideRef.current, {
-          x: 9,
+          x: 19,
           scale: 1.015,
           duration: 4,
           ease: "sine.inOut",
