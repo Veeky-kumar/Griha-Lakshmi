@@ -210,8 +210,8 @@ const ParallaxScene = () => {
             />
           </div>
 
-          {/* Content container with top offset */}
-          <div className="absolute inset-0 pt-[8%]">
+          {/* Content container with top offset - responsive for all screens */}
+          <div className="absolute inset-0 pt-[clamp(5%,6vw,8%)]">
             
             {/* Z-Index 0.5: Stars */}
             <div className="absolute inset-0 z-[5] pointer-events-none">
@@ -305,33 +305,34 @@ const ParallaxScene = () => {
               />
             </div>
 
-            {/* Z-Index 8: Upper Middle Siva - positioned at 15% */}
+            {/* Z-Index 8: Upper Middle Siva - positioned to attach with upper canvas on mobile, fully visible on larger screens */}
             <div 
-              className="absolute z-[80] pointer-events-none left-1/2 -translate-x-1/2"
+              className="absolute z-[80] pointer-events-none left-1/2 -translate-x-1/2 md:pt-[3%] md:mt-[2%] lg:pt-[5%] lg:mt-[3%] xl:pt-[7%] xl:mt-[4%] 2xl:pt-[8%] 2xl:mt-[5%]"
               style={{
-                top: '15%',
+                top: 'clamp(10%, 13vw, 16%)',
                 width: '100%',
-                    }}
+              }}
             >
-              {/* Siva - scales properly */}
+              {/* Siva - scales properly, ensures full visibility on all screen sizes */}
               <img 
                 src={upperSiva} 
                 alt="" 
                 className="mx-auto h-auto"
                 style={{ 
                   width: 'clamp(38%, 45vw, 52%)',
+                  maxHeight: '75vh',
+                  objectFit: 'contain',
                   filter: 'drop-shadow(0 22px 40px rgba(0,0,0,0.75)) drop-shadow(0 10px 20px rgba(0,0,0,0.6))'
                 }}
               />
             </div>
 
-            {/* Z-Index 9: Rose Branches - positioned at 15% */}
+            {/* Z-Index 9: Rose Branches - positioned to match Siva */}
             <div 
               className="absolute z-[90] pointer-events-none left-1/2 -translate-x-1/2"
               style={{
-                top: '15%',
+                top: 'clamp(10%, 13vw, 16%)',
                 width: '100%',
-             
               }}
             >
               {/* Left Rose Branch 1 - Outer at -2% */}
@@ -387,8 +388,8 @@ const ParallaxScene = () => {
               />
             </div>
 
-            {/* Z-Index 10: Arch Sides (Upper Left & Right) */}
-            <div className="absolute top-[13%] left-0 right-0 z-[10] pointer-events-none">
+            {/* Z-Index 10: Arch Sides (Upper Left & Right) - aligned with Siva */}
+            <div className="absolute top-[clamp(9%,10vw,12%)] left-0 right-0 z-[10] pointer-events-none">
               <img 
                 src={upperLeft} 
                 alt="" 
